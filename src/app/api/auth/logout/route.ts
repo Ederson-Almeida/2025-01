@@ -1,12 +1,18 @@
 import { NextResponse } from 'next/server';
-import { cookies } from 'next/headers';
 
 export async function POST() {
   try {
-    // Remove o cookie de autenticação
-    cookies().delete('auth_token');
+    // Cria uma resposta com o cookie expirado
+    const response = NextResponse.json({ message: 'Logout realizado com sucesso' });
+    
+    // Remove o cookie definindo uma data de expiração no passado
+    response.cookies.set('auth_token', '', {
+      expires: new Date(0),
+      path: '/'
+    });
+    
 
-    return NextResponse.json({ message: 'Logout realizado com sucesso' });
+    return response;
   } catch (error) {
     console.error('Erro ao fazer logout:', error);
     return NextResponse.json(
