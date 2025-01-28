@@ -11,7 +11,9 @@ const nextConfig = {
         hostname: "images.unsplash.com",
       },
     ],
+    unoptimized: true,
   },
+  output: "standalone",
 };
 
 module.exports = nextConfig;
