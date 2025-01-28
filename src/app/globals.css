@@ -1,3 +1,7 @@
+@import "primereact/resources/themes/lara-light-blue/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,19 +25,83 @@ body {
 }
 
 /* Estilo para scrollbar horizontal das categorias */
-.overflow-x-auto::-webkit-scrollbar {
-  height: 4px;
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-.overflow-x-auto::-webkit-scrollbar-track {
-  background: #f1f1f1;
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.overflow-x-auto::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 2px;
+/* Customização do PrimeReact */
+.p-button {
+  border-radius: 8px !important;
+  padding: 0.75rem 1.25rem !important;
 }
 
-.overflow-x-auto::-webkit-scrollbar-thumb:hover {
-  background: #555;
+/* Botão de cadastro (primary) */
+.p-button.p-button-info {
+  background: #3B82F6 !important;
+  border-color: #3B82F6 !important;
+  color: #ffffff !important;
+}
+
+.p-button.p-button-info:hover {
+  background: #2563EB !important;
+  border-color: #2563EB !important;
+}
+
+/* Botão de login (outlined) */
+.p-button.p-button-text {
+  background: #f3f4f6 !important;
+  color: #3B82F6 !important;
+  border: none !important;
+}
+
+.p-button.p-button-text:hover {
+  background: #e5e7eb !important;
+  color: #2563EB !important;
+}
+
+/* Outros botões outlined */
+.p-button.p-button-outlined {
+  background: transparent !important;
+  color: #3B82F6 !important;
+  border-color: #3B82F6 !important;
+}
+
+.p-button.p-button-outlined:hover {
+  background: rgba(59, 130, 246, 0.04) !important;
+  border-color: #2563EB !important;
+  color: #2563EB !important;
+}
+
+.p-button.p-button-lg {
+  padding: 0.75rem 1.25rem !important;
+}
+
+.p-inputtext {
+  border-radius: 8px !important;
+  padding: 0.75rem 1.25rem !important;
+  width: 100% !important;
+}
+
+.p-password {
+  width: 100% !important;
+  display: flex !important;
+}
+
+.p-password-input {
+  width: 100% !important;
+}
+
+.p-dialog {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+}
+
+.p-dialog .p-dialog-content {
+  border-radius: 16px !important;
+  padding: 0 !important;
 }
