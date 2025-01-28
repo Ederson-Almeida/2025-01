@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["assets-portal-cms.olx.com.br"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "assets-portal-cms.olx.com.br",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
   },
 };
 

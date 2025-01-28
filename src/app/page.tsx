@@ -7,7 +7,8 @@ const professionals = [
   {
     id: 1,
     name: "Borcelle",
-    image: "/images/borcelle.jpg",
+    image:
+      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=400",
     category: "Jardinagem",
     description:
       "Poda planejada ou emergencial, projetos de paisagismo, e etc...",
@@ -15,26 +16,29 @@ const professionals = [
   {
     id: 2,
     name: "Go Dog",
-    image: "/images/go-dog.jpg",
+    image:
+      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=400",
     category: "DogWallker",
     description:
-      "Poda planejada ou emergencial, projetos de paisagismo, e etc...",
+      "Passeios diários, cuidados especiais e atenção total para seu pet.",
   },
   {
     id: 3,
     name: "Marlene",
-    image: "/images/marlene.jpg",
+    image:
+      "https://images.unsplash.com/photo-1599577180758-69c952d78d84?q=80&w=400",
     category: "Baby Sitter",
     description:
-      "Poda planejada ou emergencial, projetos de paisagismo, e etc...",
+      "Cuidados com crianças, atividades educativas e acompanhamento escolar.",
   },
   {
     id: 4,
     name: "Simpe",
-    image: "/images/simpe.jpg",
+    image:
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=400",
     category: "Limpeza",
     description:
-      "Poda planejada ou emergencial, projetos de paisagismo, e etc...",
+      "Limpeza residencial e comercial, com produtos de qualidade e equipe treinada.",
   },
 ];
 
